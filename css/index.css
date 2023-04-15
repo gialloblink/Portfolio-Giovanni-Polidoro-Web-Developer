@@ -1,0 +1,455 @@
+h1{
+    font-size: 4em;
+}
+h2{
+    font-size: 2em;
+}
+h3{
+    font-size: 1.33em;
+    font-weight: 400;
+}
+#header{
+    font-family: 'Rubik';
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    margin-top: 50px;
+} 
+#header #primaRigha{
+    display: grid;
+    grid-template-columns:repeat(5,1fr);
+    grid-column: 2/span 6;
+    align-items: center;
+    align-content: center;
+    justify-content:center;
+}
+#graffaSopra{
+    display: grid;
+    font-size: 17em;
+    color: #FEC35B;
+    justify-content:center;
+    animation: ingresso 1.5s    ease-out;
+}
+
+#hello{
+    display: grid;
+    font-size: 4em;
+    font-weight: 700;
+    align-items: flex-start;
+}
+#uguale{
+    font-size: 17em;
+    color: #08FDD8;
+    display: grid;
+    justify-content:center;
+}
+#puntiSospensione{
+    font-size: 17em;
+    color: #FEC35B;
+    display: grid;
+    justify-content:center;
+    /* animation: caduta 5.5s 0.5s   ease-out; */
+}
+#header img{
+    width: 100%;
+}
+#secondaRigha{
+    margin-top: -30px;
+    display: grid;
+    grid-row: 3;
+    grid-template-columns:repeat(5,1fr);
+    grid-column: 2/span 6;
+    align-items: center;
+    align-content: center;
+    justify-content:center;
+}
+#simboloMaggiore,#simboloMinore{
+    display: grid;
+    font-size: 17em;
+    color: #EF476F;
+    align-items: center;
+    align-content: center;
+    justify-content:center;
+    animation: rotazione 1.5s 0.5s   ease-out;
+    
+}
+#developer{
+    text-align: right;
+    font-size: 4em;
+    font-weight: 700;
+}
+#graffaSotto{
+    /* height: 322.4px; */
+    display: grid;
+    font-size: 17em;
+    color: #FEC35B;
+    text-align: center;
+    animation: ingresso 1.5s   ease-in-out;
+}
+p span #punto{
+    color: #08FDD8;
+}
+
+/* Sezione About */
+
+#about{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns:repeat(8,1fr);
+}
+.contenitoreParagrafo{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-column: 2/span 3;
+    margin-left: 12%;
+    font-size: 1em;
+    
+}
+#paragrafoAbout{
+    line-height: 1.8em;
+}
+@media (max-width: 1200px) {
+   #paragrafoAbout {
+      font-size: 1.33em;
+    }
+    h1{
+        font-size: 5em;
+    }
+}
+
+.sottolineaturaAbout{
+    height:10px;
+    width: 245px;
+    position:relative ;
+    top: -20px;
+    left:-5px;
+}
+.contenitoreLoghi{
+    z-index: -1;
+    margin-right: 12%;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-column: 5/span 3;
+    grid-row: 1/span 4;
+}
+#about .contenitoreLoghi img{
+    opacity: 0.8;
+    width: 50%;
+    position:relative;
+}
+#logoHtml{
+    grid-row:1;
+    grid-column:1;
+}
+#logoJavascript{
+    grid-row:2;
+    grid-column:3;
+}
+#logoCss{
+    grid-row:3;
+    grid-column:2;
+}
+#logoBootstrap{
+    grid-row:4;
+    grid-column:3;
+}
+#logoPhp{
+    grid-row:4;
+    grid-column:1;
+    bottom:-40px;
+}
+
+   /* Skill */
+
+#skill{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns:repeat(8,1fr);
+}
+#titoloSkill{
+    display: grid;
+    grid-column: 2/span 3;
+    margin-left: 12%;
+}
+.sottolineaturaSkill{
+    height:10px;
+    width: 180px;
+    position:relative ;
+    top: -20px;
+    left:-5px;
+}
+#contenitoreLoghiSkill{
+    display: grid;
+    grid-column: 5/span 3;
+    grid-template-columns:repeat(3,1fr);
+}
+#logoLaravel{
+    opacity: 0.8;
+    width: 50%;
+    position:relative;
+    grid-column:2;
+    bottom:-80px;
+}
+#logoMysql{
+    opacity: 0.8;
+    width: 50%;
+    position:relative;
+}
+#barreSkill{
+    display: grid;
+    grid-template-columns:repeat(8,1fr);
+}
+#frontEnd{
+    display: grid;
+    grid-column: 2/span 3;
+    margin-left: 12%;
+    display: flex;
+    flex-direction: column;
+}
+#backEnd{
+    display: grid;
+    grid-column: 5/span 3;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+}
+
+
+/* RIEMPIMENTO BARRE SKILL */
+
+
+.sfondoBarra{
+    background-color: #E1DFDE;
+    height: 10px;
+    width: 90%;
+}
+.riempimentoBarra{
+    background-color: #EF476F;
+    height: 10px;
+    animation: caricamento 5s     ease-out;   
+}
+.riempimentoBarra:hover{
+    background-color: #8b3348;
+}
+.html{
+    max-width: 70%;
+}
+.css{
+    max-width: 80%;
+}
+.javascrip{
+    max-width: 50%;
+}
+.jquery{
+    max-width: 50%;
+}
+.bootstrap{
+    max-width: 80%;
+}
+.react{
+    max-width: 55%;
+}
+.php{
+    max-width: 65%;
+}
+.mysql{
+    max-width: 50%;
+}
+.laravel{
+    max-width: 10%;
+}
+
+#barreSkill h3{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+#barreSkill h2{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* sezione contatti */
+
+.sottolineaturaContatti{
+    height:10px;
+    width: 330px;
+    position:relative ;
+    top: -20px;
+    left:-5px;
+}
+
+#contatti{
+    margin-top: 100px;
+    margin-left: 17%;
+    display: flex;
+    flex-direction: column;
+}
+#social{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+#social p{
+    font-size: 1.33em;
+    text-align: center;
+}
+#social p a{
+    text-decoration: none;
+    color: #E1DFDE;
+}
+#social p span{
+    font-size: 2.2em;
+    color: #FEC35B;
+}
+.icon-github-circled{
+    font-size: 2.2em;
+    color: #FEC35B;
+    margin-left: 1%;
+    
+}
+.whatsapp{
+    margin-left: 2%;
+    font-size: 0.9em;
+}
+
+
+/* animazioni */
+
+
+
+@keyframes ingresso{
+    0%{font-size:0em}
+    100%{font-size:17em}
+}
+@keyframes rotazione{
+    0%{transform: rotate(0deg);}
+    
+    100%{transform: rotate(360deg);}
+    
+}
+@keyframes rotazione2{
+    0%{transform: rotate(0deg);}
+    
+    100%{transform: rotate(405deg);}
+}
+@keyframes caduta{
+
+}
+
+@keyframes caricamento{
+    0%{width: 0%;}
+    /* 50%{transform: rotate(360deg);} */
+    100%{width: 100%;}
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1036px) {
+    #header #primaRigha {
+      grid-column: 1/span 8;
+    }
+    #header #secondaRigha {
+      grid-column: 1/span 8;
+    }
+    .contenitoreParagrafo {
+        grid-column: 1/span 4;
+    }
+    .contenitoreLoghi{
+        grid-column: 5/span 8;
+    }
+    #titoloSkill{
+        grid-column: 1/span 4;
+    }
+    #contenitoreLoghiSkill{
+        grid-column: 5/span 8;
+    }
+    #frontEnd{
+        grid-column: 1/span 4;
+    }
+    #backEnd{
+        grid-column: 5/span 8;
+    }
+    #contatti{
+        margin-left: 6%;
+    }
+}
+@media (min-width:650px) {
+    #punti,#info{
+        display: none;
+    }
+}
+@media(max-width:650px) {
+    #secondaFreccia,#puntiSospensione, #primaFreccia,#uguale,#mailEstesa{
+        display: none;
+    }
+    #header #primaRigha{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #header #secondaRigha{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #simboloMaggiore,#simboloMinore{
+        position: absolute;
+        z-index: -1;
+        opacity: 0.7;
+    }
+    #punti{
+        font-size: 17em;
+        color: #08FDD8;
+    }
+    #simboloMinore{
+        transform:rotate(45deg);
+        transform-origin: left top;
+        top: 250px;
+        left: 23%;
+        animation: rotazione2 1.3s .5s   ease-out;
+    }
+    #simboloMaggiore{
+        transform:rotate(45deg);
+        transform-origin: left top;
+        top: 170px;
+        left: 38%;
+        animation: rotazione2 1.3s .5s   ease-out;
+    }
+    #graffaSotto{
+        height: 241px;
+    }
+    .contenitoreParagrafo {
+        margin-left: 5%; 
+    }
+    .contenitoreLoghi {
+        margin-left: 5%; 
+        margin-right: 0%;
+        grid-column: 6/span 8;
+    }
+    #about .contenitoreLoghi #logoPhp{
+        width: 80%;
+    }
+    #titoloSkill{
+        margin-left: 5%;
+    }
+    #frontEnd{
+        margin-left: 0;
+    }
+    #barreSkill{
+        margin-left: 3%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    #contatti{
+        margin-left: 3%;
+    }
+    #social p span{
+        font-size: 2em;
+    }
+    .icon-github-circled{
+        font-size: 2em;
+    }
+    .whatsapp{
+        font-size: 0.8em;
+    }
+}

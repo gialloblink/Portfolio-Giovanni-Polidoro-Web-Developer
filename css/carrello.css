@@ -1,0 +1,99 @@
+@media (max-width: 1200px) {
+    body {
+        font-size: 16px;
+    }
+    #barraNavigazione{
+        height: 85px;
+    }
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.flex{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    /* justify-content: center; */
+}
+.container{
+    font-family: 'Rubik';
+    width: 330px;
+    background: #FEC35B;
+    color: rgba(0, 0, 0, 0.779);
+    border-radius: 0.3em;
+}
+.flex .container h1 {
+    text-align: center;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+.ordineSingolo{
+    background: #fdca72;
+    margin: 0.8em 0 1.1em 0;
+    font-size: 1.2em;
+    padding: 0.1em 0 0.1em 0.6em;
+}
+.prodotto{
+    margin-bottom: 0.3em;
+}
+.totale{
+    text-align: center;
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+.pulsante{
+    margin-top: 1em;
+    width: 340px;
+    text-align: center;
+    border-radius: 0.7em;
+    padding: 0.5em;
+    background-color: #EF476F;
+    color: #E1DFDE;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform:uppercase;
+    box-shadow: -10px 7px 36px -16px #000000;
+
+}
+.continuaAcquisti{
+    margin-top: 1em;
+    width: 340px;
+    text-align: center;
+    border-radius: 0.7em;
+    padding: 0.5em;
+    background-color: #EF476F;
+    color: #E1DFDE;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform:uppercase;
+    box-shadow: -10px 7px 36px -16px #000000;
+}
+.continuaAcquisti:hover{
+    cursor: cell;
+    box-shadow: inset 3px 2px 10px 2px #000000;
+}
+.svuotaCarrello{
+    margin-top: 1em;
+    width: 340px;
+    text-align: center;
+    border-radius: 0.7em;
+    padding: 0.5em;
+    background-color: #EF476F;
+    color: #E1DFDE;
+    /* text-decoration: none; */
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform:uppercase;
+    box-shadow: -10px 7px 36px -16px #000000;
+    border: 0px
+}
+.svuotaCarrello:hover{
+    cursor: cell;
+    box-shadow: inset 3px 2px 10px 2px #000000;
+}
