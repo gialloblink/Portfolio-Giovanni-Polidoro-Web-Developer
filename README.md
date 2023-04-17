@@ -18,4 +18,5 @@ PHP
 aggiunta Link 
 <a href="https://wa.me/393791998409?text=Salve,%20la%20contatto%20per:" target="_blank">WhatsApp</a>
 
-![](./img/Screenshot WhatsApp.png)
+
+![](./img/Screenshot_WhatsApp.png)
